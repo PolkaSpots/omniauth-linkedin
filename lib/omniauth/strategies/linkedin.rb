@@ -10,7 +10,7 @@ module OmniAuth
         :request_token_path => '/uas/oauth/requestToken',
         :access_token_path => '/uas/oauth/accessToken',
         :authorize_url => 'https://www.linkedin.com/uas/oauth/authenticate',
-        :proxy => ENV['HTTP_PROXY'] || nil
+        :proxy => ENV['http_proxy'] || nil
       }
 
       option :fields, ["id", "email-address", "first-name", "last-name", "headline", "industry", "picture-url", "public-profile-url", "location"]
